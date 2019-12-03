@@ -7,7 +7,7 @@ import javax.persistence.*;
 @Entity
 public class Location{
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String name;
@@ -15,11 +15,9 @@ public class Location{
 
     public Location() {
     }
-    
 
-
-    public Location(Long id, String name, String address) {
-        this.id = id;
+    public Location(String name, String address) {
+        // this.id = id;
         this.name = name;
         this.address = address;
     }

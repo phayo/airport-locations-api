@@ -22,4 +22,9 @@ public class LocationServiceImpl implements LocationService {
     public List<Location> retrieveLocations() {
         return (List<Location>) locationRepo.findAll();
     }
+
+    @Override
+    public void addLocation(Location location){
+        locationRepo.save(location);
+    }
 }

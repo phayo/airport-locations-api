@@ -9,4 +9,6 @@ import org.springframework.stereotype.Service;
 @Service
 public interface LocationService{
     List<Location> retrieveLocations();
+
+    void addLocation(Location location);
 }
