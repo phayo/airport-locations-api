@@ -3,6 +3,7 @@ package com.ebuka.locationsapi.controller;
 import java.util.List;
 
 import com.ebuka.locationsapi.entity.Location;
+import com.ebuka.locationsapi.service.LocationService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

@@ -1,5 +1,7 @@
 package com.ebuka.locationsapi.entity;
 
+import java.util.Objects;
+
 import javax.persistence.*;
 
 @Entity
@@ -10,7 +12,11 @@ public class Location{
 
     private String name;
     private String address;
+
+    public Location() {
+    }
     
+
 
     public Location(Long id, String name, String address) {
         this.id = id;
